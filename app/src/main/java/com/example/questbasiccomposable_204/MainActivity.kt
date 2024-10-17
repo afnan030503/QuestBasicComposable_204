@@ -47,7 +47,7 @@ class MainActivity : ComponentActivity() {
 fun BasicColumn(modifier: Modifier = Modifier) {
     Column(
        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangment = Arrangement.Top,
+        verticalArrangement = Arrangement.Top,
         modifier = modifier
             .fillMaxSize()
             .padding(16.dp)
@@ -75,6 +75,12 @@ fun BasicColumn(modifier: Modifier = Modifier) {
             modifier = Modifier
                 .clip(CircleShape)
         )
+
+        Spacer(modifier = Modifier.padding(20.dp))
+        Text(
+            text = "Nama",
+            fontSize =
+        )
     }
 }
 
@@ -82,6 +88,6 @@ fun BasicColumn(modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     QuestBasicComposable_204Theme {
-        Greeting("Android")
+        BasicColumn("Android")
     }
 }
