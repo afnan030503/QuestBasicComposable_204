@@ -43,7 +43,10 @@ fun BasicColumn(modifier: Modifier = Modifier) {
             .padding(16.dp)
     ){
         //title login
-        Text()
+        Text(
+            text = "Login",
+            fontSize = 50.dp,
+        )
     }
 }
 
