@@ -5,11 +5,14 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -51,23 +54,25 @@ fun BasicColumn(modifier: Modifier = Modifier) {
         modifier = modifier
             .fillMaxSize()
             .padding(16.dp)
-    ){
-        //title login
+            .background(Color.Transparent)
+    )
+    {
+
         Text(
-            text = "Login",
-            fontSize = 50.dp,
+            "Login",
+            fontSize = 20.sp,
             fontWeight = FontWeight.Bold
         )
 
         Spacer(modifier = Modifier.padding(4.dp))
         Text(
-            text = "Ini adalah halamn login",
-            fontSize = 20.sp,
+            text = "Ini adalah halaman login",
+            fontSize = 15.sp,
             fontStyle = FontStyle.Italic,
-            color = Color.Gray
+            color = Color.Black
         )
 
-        Spacer(modifier = Modifier.padding(20.dp))
+        Spacer(modifier = Modifier.padding(1.dp))
         Image(
 
             painter = painterResource(id = R.drawable.logo_universitas),
@@ -76,31 +81,33 @@ fun BasicColumn(modifier: Modifier = Modifier) {
                 .clip(CircleShape)
         )
 
-        Spacer(modifier = Modifier.padding(20.dp))
+        Spacer(modifier = Modifier.padding(1.dp))
         Text(
             text = "Nama",
-            fontSize = 30.sp,
+            fontSize = 20.sp,
             fontWeight = FontWeight.Medium
         )
 
         Text(
             text = "Muhammad Afnan Maulidi",
-            fontSize = 25.sp,
-            color = Color.Red,
+            fontSize = 20.sp,
+            color = Color.DarkGray,
         )
 
-        Spacer(modifier = Modifier.padding(10.dp))
+        Spacer(modifier = Modifier.padding(5.dp))
         Text(
             text = "20220140204",
-            fontSize = 40.sp,
-            fontWeight = FontWeight.Bold
+            fontSize = 20.sp,
+            fontWeight = FontWeight.Bold,
+            fontStyle = FontStyle.Italic
         )
 
-        Spacer(modifier = Modifier.padding(20.dp))
+        Spacer(modifier = Modifier.padding(4.dp))
         Image(
-            painter = painterResource(id = R.drawable.afnan),
+            painter = painterResource(id = R.drawable.gas),
             contentDescription = "Foto Mahasiswa",
             modifier = Modifier
+                .fillMaxWidth()
                 .clip(CircleShape)
         )
     }
@@ -110,6 +117,6 @@ fun BasicColumn(modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     QuestBasicComposable_204Theme {
-        BasicColumn("Android")
+        BasicColumn()
     }
 }
