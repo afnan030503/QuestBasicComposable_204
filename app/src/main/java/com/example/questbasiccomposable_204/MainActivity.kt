@@ -88,6 +88,8 @@ fun BasicColumn(modifier: Modifier = Modifier) {
             fontSize = 25.sp,
             color = Color.Red,
         )
+
+        Spacer(modifier = Modifier.padding(10.dp))
     }
 }
 
@@ -95,6 +97,6 @@ fun BasicColumn(modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     QuestBasicComposable_204Theme {
-        BasicColumn("Android")
+        GreetingPreview("Android")
     }
 }
