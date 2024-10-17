@@ -62,6 +62,8 @@ fun BasicColumn(modifier: Modifier = Modifier) {
             fontStyle = FontStyle.Italic,
             color = Color.Gray
         )
+
+        Spacer(modifier = Modifier.padding(20.dp))
     }
 }
 
