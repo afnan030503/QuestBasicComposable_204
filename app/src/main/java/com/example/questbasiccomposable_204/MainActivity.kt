@@ -84,7 +84,9 @@ fun BasicColumn(modifier: Modifier = Modifier) {
         )
 
         Text(
-            text = "Muhammad Afnan Maulidi"
+            text = "Muhammad Afnan Maulidi",
+            fontSize = 25.sp,
+            color = Color.Red,
         )
     }
 }
