@@ -97,7 +97,12 @@ fun BasicColumn(modifier: Modifier = Modifier) {
         )
 
         Spacer(modifier = Modifier.padding(20.dp))
-
+        Image(
+            painter = painterResource(id = R.drawable.afnan),
+            contentDescription = "Foto Mahasiswa",
+            modifier = Modifier
+                .clip(CircleShape)
+        )
     }
 }
 
@@ -105,6 +110,6 @@ fun BasicColumn(modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     QuestBasicComposable_204Theme {
-        GreetingPreview("Android")
+        BasicColumn("Android")
     }
 }
