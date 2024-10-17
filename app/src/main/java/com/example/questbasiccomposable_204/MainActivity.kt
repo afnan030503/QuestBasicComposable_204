@@ -41,7 +41,10 @@ fun BasicColumn(modifier: Modifier = Modifier) {
         modifier = modifier
             .fillMaxSize()
             .padding(16.dp)
-    )
+    ){
+        //title login
+        Text()
+    }
 }
 
 @Preview(showBackground = true)
